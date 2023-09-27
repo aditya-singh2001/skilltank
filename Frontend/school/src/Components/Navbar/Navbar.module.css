@@ -1,0 +1,20 @@
+.homeIcon{
+    display: flex;
+}
+.homeIcon::before{
+    content: "|";
+    font-size: 30px;
+}
+@media only screen and (max-width: 800px) {
+    .link{
+        gap:20px !important;
+    }
+    .navbar{
+        padding: 10px 20px !important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .link{
+        gap:50px !important;
+    }
+}

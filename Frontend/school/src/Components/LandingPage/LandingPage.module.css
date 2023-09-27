@@ -1,0 +1,11 @@
+input::placeholder{
+    color: #e0e0e0;
+}
+@media only screen and (max-width: 768px) {
+    .landing{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .firstCard{
+        margin: auto !important;
+    }
+}
