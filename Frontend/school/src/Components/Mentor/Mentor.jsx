@@ -6,7 +6,7 @@ export default function Mentor() {
     fetchAllMentor();
   },[])
   const fetchAllMentor=()=>{
-    fetch(`http://localhost:4000/mentor/`,{
+    fetch(`https://harlequin-hippo-tam.cyclic.cloud/mentor/`,{
       headers:{
         "Authorization":localStorage.getItem("token")
       }
