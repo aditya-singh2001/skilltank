@@ -45,7 +45,7 @@ userRouter.post("/login",async (req,res)=>{
                         let token = jwt.sign({ id:findUser[0]._id }, 'aditya');
                         res.send({"message":"login successful",token,"name":findUser[0].name});
                     }else{
-                        res.send({"message":`This is account is ${findUser[0].type}. Please login in ${findUser[0].type}.`})
+                        res.send({"message":`This is account is associated as ${findUser[0].type} account. Please login in as ${findUser[0].type} account.`})
                     }
                 }else{
                     res.send({"message":"Incorrect password"});

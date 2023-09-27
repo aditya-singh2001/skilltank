@@ -44,7 +44,7 @@ export default function Signin() {
       }).then(res=>res.json()).then((res)=>{
         alert(`${res.message}`)
         setLogin("signin")
-        nav("/");
+        // nav("/");
       }).catch(err=>console.log(err))
     }else{
       alert("Please fill all the details")
