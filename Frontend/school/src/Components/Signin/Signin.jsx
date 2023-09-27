@@ -70,7 +70,6 @@ export default function Signin() {
       alert("Please fill all the details")
     }
   }
-  console.log(loginForm)
   return (
     <div style={inlineStyle}>
       {
