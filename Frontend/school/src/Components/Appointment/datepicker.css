@@ -1,0 +1,8 @@
+.custom-datepicker {
+    border: 1px solid black;
+    /* margin: auto; */
+   
+  }
+  .custom-datepicker::placeholder{
+    color: black;
+  }
