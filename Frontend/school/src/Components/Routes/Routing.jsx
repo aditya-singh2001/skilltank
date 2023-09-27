@@ -13,6 +13,7 @@ export default function Routing() {
         <Route path='/studentlogin' element={<><Navbar/><Signin/></>}/>
         <Route path='/companylogin' element={<><Navbar/><Signin/></>}/>
         <Route path='/mentors' element={<><Navbar/><Mentor/></>}/>
+        <Route path='*' element={<><Navbar/><h1 style={{textAlign:"center",color:"red",fontSize:"40px",marginTop:"40px"}}>404, Page not found</h1></>}/>
     </Routes>
     </>
   )
