@@ -35,7 +35,7 @@ export default function Signin() {
   };
   const signupFunc=()=>{
     if(signupForm.name != ""&& signupForm.email !="" && signupForm.pass !="" && signupForm.type!=""){
-      fetch(`http://localhost:4000/users/register`,{
+      fetch(`https://harlequin-hippo-tam.cyclic.cloud/users/register`,{
         method:"POST",
         body:JSON.stringify(signupForm),
         headers:{
@@ -44,7 +44,7 @@ export default function Signin() {
       }).then(res=>res.json()).then((res)=>{
         alert(`${res.message}`)
         setLogin("signin")
-        nav("/");
+        // nav("/");
       }).catch(err=>console.log(err))
     }else{
       alert("Please fill all the details")
@@ -52,7 +52,7 @@ export default function Signin() {
   }
   const loginFunc=()=>{
     if(loginForm.email != "" && loginForm.pass!=""){
-      fetch(`http://localhost:4000/users/login`,{
+      fetch(`https://harlequin-hippo-tam.cyclic.cloud/users/login`,{
         method:"POST",
         body:JSON.stringify(loginForm),
         headers:{
@@ -70,7 +70,6 @@ export default function Signin() {
       alert("Please fill all the details")
     }
   }
-  console.log(loginForm)
   return (
     <div style={inlineStyle}>
       {

@@ -34,7 +34,7 @@ export default function Navbar() {
                 </Link>
                 <div className={style.link} style={{ display: "flex", gap: "100px", alignItems: 'center' }}>
                     <Link>Learn</Link>
-                    <Link to='mentors'>Mentors</Link>
+                    <Link to='/mentors'>Mentors</Link>
                     <Link>Compete</Link>
                     <Link>Jobs</Link>
                 </div>
