@@ -12,7 +12,7 @@ export default function Appointment() {
     }, [])
     const [startDate, setStartDate] = useState(null);
     const fetchMentor = () => {
-        fetch(`http://localhost:4000/mentor/${id}`, {
+        fetch(`https://harlequin-hippo-tam.cyclic.cloud/mentor/${id}`, {
             headers: {
                 "Authorization": localStorage.getItem("token")
             }
